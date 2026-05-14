@@ -21,3 +21,5 @@ Thumbs.db
 
 # AWS
 .elasticbeanstalk/
+node_modules
+ui/build
