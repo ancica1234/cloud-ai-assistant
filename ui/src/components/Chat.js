@@ -42,10 +42,20 @@ export default function Chat() {
         sources = e.data ? e.data.split(",").filter(Boolean) : [];
       });
       es.addEventListener("token", e => {
-        setMessages(prev => {
-          const updated = [...prev];
+        setMessages(msgs => {
+          const updated = [...msgs];
           const last = { ...updated[updated.length - 1] };
-          last.content += e.data;
+          const token = e.data;
+          const prev = last.content;
+          const needsSpace = prev.length > 0
+            && token !== " " && !prev.endsWith(" ")
+            && token.charCodeAt(0) !== 10
+            && !".,:;!?)}".includes(token[0]);
+
+
+
+
+          last.content += needsSpace ? " " + token : token;
           last.sources = sources;
           updated[updated.length - 1] = last;
           return updated;
