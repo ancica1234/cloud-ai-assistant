@@ -1,0 +1,23 @@
+
+# Build
+target/
+*.jar
+
+# Vector store cache (auto-generated, do not commit)
+vectorstore.json
+
+# Environment secrets
+.env
+*.env
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# AWS
+.elasticbeanstalk/

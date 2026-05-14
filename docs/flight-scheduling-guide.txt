@@ -1,0 +1,40 @@
+Flight Scheduling Guide
+=======================
+
+Daily Schedule Build Process
+-----------------------------
+1. Check environmental data: sunset, EENT, HLL, highlight window, field hours.
+2. Review aircraft status: identify FMC, PMC, NMC aircraft and available periods.
+3. Pull SNIV list: identify who is unavailable today.
+4. Check med-down list: identify medically grounded personnel.
+5. Build student priority list: AF exchange first, refreshers second, standard third.
+6. Consult IP Hotboard: assign instructor with least flight hours to next line.
+7. Assign crews to flight lines: match IP qualifications to event type.
+8. Check for double-schedule conflicts.
+9. Confirm ground school CSI coverage.
+10. Publish the daily whiteboard.
+
+Whiteboard Rows
+---------------
+ODO: Officer of the Day assigned to each time block.
+FCF: Crew assigned to Functional Check Flight.
+FLIGHT EVENT: Personnel scheduled for a flight today.
+SIM EVENT: Personnel scheduled for a simulator session today.
+SNIVED: Personnel who have submitted unavailability.
+DOUBLE SCHEDULE: Personnel flagged as conflicting schedules.
+MED DOWN: Medically grounded personnel.
+GRND EVENT: Personnel assigned to ground events only.
+
+Environmental Data
+------------------
+Sunset time determines when night operations begin.
+EENT defines the night vision goggle requirement threshold.
+HLL defines ambient light conditions affecting NVG operations.
+Field hours define when the airfield is open for operations.
+Flight window (e.g. 2x2) shows available morning and afternoon flight slots.
+
+Aircraft Status Codes
+---------------------
+FMC: Available for all periods and event types.
+PMC: Limited availability, check specific periods.
+NMC: Grounded, not available for any flights.

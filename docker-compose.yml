@@ -1,0 +1,30 @@
+
+version: "3.9"
+
+services:
+  cloud-ai-assistant:
+    build: .
+    container_name: cloud-ai-assistant
+    ports:
+      - "8081:8081"
+    environment:
+      # Set your OpenAI API key here or in a .env file
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      # Optional overrides
+      - APP_AI_RAG_TOP_K=6
+      - APP_CORS_ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8080
+    volumes:
+      # Mount local docs folder into the container
+      - ./docs:/app/docs
+      # Persist vectorstore so it survives container restarts
+      - vectorstore_data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8081/api/ai/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+volumes:
+  vectorstore_data:

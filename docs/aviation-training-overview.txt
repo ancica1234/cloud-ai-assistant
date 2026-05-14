@@ -1,0 +1,48 @@
+Aviation Training Assistant - Knowledge Base Overview
+=====================================================
+
+This AI assistant answers questions about aviation flight training operations.
+It covers flight scheduling, ground school, instructor availability,
+student progress, environmental constraints, and aircraft status.
+
+Key Concepts
+------------
+SNIV: A request for a person NOT to be scheduled. Sourced from the scheduling system.
+FMC: Fully Mission Capable - aircraft available for all flight operations.
+PMC: Partially Mission Capable - aircraft has limited availability.
+NMC: Non-Mission Capable - aircraft is grounded.
+CAL: Calibration flight event type.
+FAM: Familiarisation flight event type.
+FCF: Functional Check Flight - post-maintenance airworthiness check.
+CSI: Certified Simulator Instructor - required for simulator events.
+EENT: End of Evening Nautical Twilight - defines night operations window.
+HLL: High Light Level - environmental threshold for night operations.
+ODO: Officer of the Day - duty officer assigned per time block.
+IP: Instructor Pilot - qualified instructor assigned to flight lines.
+AF Exchange: Air Force exchange student - high scheduling priority.
+Refresher: Pilot returning to currency - elevated scheduling priority.
+
+Scheduling Priority Order
+--------------------------
+1. AF Exchange students - tightest timelines, scheduled first.
+2. Refresher pilots - returning to currency, scheduled second.
+3. Standard syllabus students - scheduled after higher priorities.
+
+Flight Lines
+------------
+Flight lines are mission slots assigned per period (AM, PM, EVE).
+Each line has: MSN number, brief time, event type, aircraft, IP, and student.
+Hot seat: same aircraft transitions from AM to PM line without shutdown.
+
+Ground School
+-------------
+Ground school events run alongside flight operations.
+Some events require a CSI to be present (simulator labs).
+Some events involve outside agencies (aeromed, night lab, course rules briefs).
+
+Instructor Hotboard
+-------------------
+The IP Hotboard ranks instructors by least year-to-date flight hours.
+Instructor with fewest hours gets priority for the next flight assignment.
+Reservists are only available on their declared drill days.
+Instructors who are SNIVED or med-down are excluded from the hotboard.

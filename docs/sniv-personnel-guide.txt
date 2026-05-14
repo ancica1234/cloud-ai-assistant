@@ -1,0 +1,31 @@
+SNIV and Personnel Availability Guide
+======================================
+
+What is a SNIV?
+---------------
+A SNIV is a request submitted by a person indicating they are NOT available to be scheduled.
+SNIVs are entered into the scheduling system and flow into the daily schedule automatically.
+
+Personnel Types
+---------------
+ACTIVE: Full-time staff, available every duty day unless SNIVED or med-down.
+AF EXCHANGE: Air Force exchange officer, high scheduling priority.
+RESERVIST: Part-time instructor, only available on declared drill days.
+NON-PERM: Non-permanent attached pilot, available per individual agreement.
+
+Double Schedule Conflict
+------------------------
+A double schedule conflict occurs when a SNIVED person still appears on a flight line.
+This must be resolved before the duty day begins.
+The system flags these conflicts in the double schedule row of the whiteboard.
+
+Med Down
+--------
+A med-down status means a person is medically grounded and cannot fly.
+Med-down personnel are excluded from flight lines and the IP Hotboard.
+
+Reservist Availability
+----------------------
+Reservists must declare their drill days in advance.
+If a reservist is not on a declared drill day they are unavailable.
+The scheduling officer maintains the personnel tracker for reservist availability.
